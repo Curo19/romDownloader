@@ -1,6 +1,7 @@
 import os.path
 import csv
 import requests
+import pandas
 
 from bs4 import BeautifulSoup
 from .romDataEntry import romDataEntry
@@ -178,13 +179,23 @@ class preparation(object):
         print("----------------")
         print("Ending config generation process")
 
-    def updateExistingConfig(self, path):
+    def updateExistingConfig(self, path, console, value):
         print("Starting update process")
         print("----------------")
 
         print("Searching for config...")
-        if os.path.isfile(path):
+        if os.path.isfile(path) and console != False:
             print("Config file detected")
+            configRomsData = pandas.read_csv(path, index_col=0)
+
+            consoleFilter = (configRomsData["Console"] == console)
+
+            if value == "True":
+                configRomsData.loc[consoleFilter, "FlagDownload"] = "True"
+            else:
+                configRomsData.loc[consoleFilter, "FlagDownload"] = "False"
+
+            configRomsData.to_csv(path)
         else:
             print("FAIL -- Unable to detect config file")
 

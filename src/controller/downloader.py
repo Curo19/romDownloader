@@ -10,7 +10,6 @@ class downloader(object):
         print("Calling downloader class")
         print("------------------------")
 
-
     def updateDownloadRowCSV(self, path, row, fileLocationLocally):
         print("------------------------")
         print("Starting Update config row")
@@ -41,6 +40,7 @@ class downloader(object):
         print("StorageLocation set: ", storageLocation)
         print("------------------------")
         browser = await launch({'headless': False})
+
         page = await browser.newPage()
         await page._client.send("Page.setDownloadBehavior", {
             "behavior": "allow",
@@ -99,7 +99,7 @@ class downloader(object):
         print("Ending download of: ",url)
         print("------------------------")
 
-    def downloadFromCsv(self,path,limit):
+    def downloadFromCsv(self,path,limit,downloadLocation):
 
         #read in csv as dict
 
@@ -109,7 +109,7 @@ class downloader(object):
             listToDownload = []
 
             for row in reader:
-                #print(row['RomName'], row['Console'], row['FlagDownload'], row['PreviouslyDownloaded'])
+                print(row['RomName'], row['Console'], row['FlagDownload'], row['PreviouslyDownloaded'])
 
                 if limit != 0:
                     count = 0
@@ -119,7 +119,7 @@ class downloader(object):
                             count = count + 1
                 else:
                     if "False" not in row['FlagDownload'] and "True" not in row['PreviouslyDownloaded']:
-                        print("Rom name adding to download list: ",row["RomName"])
+                        print("Rom name adding to download list: ", row["RomName"])
                         listToDownload.append(row)
 
 
@@ -130,29 +130,29 @@ class downloader(object):
                 print("List of roms to download which have not already been downloaded is empty.")
             else:
                 print("Starting download")
-                if os.path.isdir("/romFolder"):
+                if os.path.isdir(downloadLocation):
                     print("Rom folder detected")
                 else:
-                    os.mkdir("/romFolder")
+                    os.mkdir(downloadLocation)
 
                 for downloadRomFile in listToDownload:
-                    if os.path.isdir("/romFolder/"+downloadRomFile['Console']):
+                    if os.path.isdir(downloadLocation+downloadRomFile['Console']):
                         print("Console folder detected: ",downloadRomFile['Console'])
                     else:
-                        os.mkdir("/romFolder/"+downloadRomFile['Console'])
+                        os.mkdir(downloadLocation+downloadRomFile['Console'])
 
                     romFolderName = downloadRomFile['RomName'].replace("/", "").replace("&", "And").replace(" ", "")\
                             .replace("-", "").replace("'", "").replace(":", "").replace("!", "").replace(".", "")
 
-                    if os.path.isdir("/romFolder/"+downloadRomFile['Console']+"/"+romFolderName):
+                    if os.path.isdir(downloadLocation+downloadRomFile['Console']+"/"+romFolderName):
                         print("Console folder detected: ",romFolderName)
                     else:
-                        os.mkdir("/romFolder/"+downloadRomFile['Console']+"/"+romFolderName)
+                        os.mkdir(downloadLocation+downloadRomFile['Console']+"/"+romFolderName)
 
-                    asyncio.get_event_loop().run_until_complete(self.downloadFile(downloadRomFile["LocationUrl"], "/romFolder/"+downloadRomFile['Console']+"/"+romFolderName))
+                    asyncio.get_event_loop().run_until_complete(self.downloadFile(downloadRomFile["LocationUrl"], downloadLocation+"/"+downloadRomFile['Console']+"/"+romFolderName))
 
                     # update config file with previously downloaded set to true and adding in file location.
-                    self.updateDownloadRowCSV(path, downloadRomFile, "/romFolder/"+romFolderName)
+                    self.updateDownloadRowCSV(path, downloadRomFile, downloadLocation+"/"+romFolderName)
 
 
 

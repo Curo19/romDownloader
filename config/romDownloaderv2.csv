@@ -12,7 +12,7 @@ Action 52,Nintendo,783 KB,fType,https://vimm.net/vault/12,https://download2.vimm
 Baby Boomer,Nintendo,31 KB,fType,https://vimm.net/vault/70,https://download2.vimm.net/download/?mediaId=67&download=Download,dateF,dateL,False,False,rate,lPath,blah
 Back to the Future,Nintendo,36 KB,fType,https://vimm.net/vault/72,https://download2.vimm.net/download/?mediaId=69&download=Download,dateF,dateL,False,False,rate,lPath,blah
 Back to the Future Part II & III,Nintendo,127 KB,fType,https://vimm.net/vault/71,https://download2.vimm.net/download/?mediaId=68&download=Download,dateF,dateL,False,False,rate,lPath,blah
-Cabal,Nintendo,94 KB,fType,https://vimm.net/vault/143,https://download2.vimm.net/download/?mediaId=139&download=Download,dateF,dateL,True,False,rate,lPath,blah
+Cabal,Nintendo,94 KB,fType,https://vimm.net/vault/143,https://download2.vimm.net/download/?mediaId=139&download=Download,dateF,dateL,False,False,rate,lPath,blah
 Cadillac,Nintendo,35 KB,fType,https://vimm.net/vault/2872,https://download2.vimm.net/download/?mediaId=2807&download=Download,dateF,dateL,False,False,rate,lPath,blah
 Caesar's Palace,Nintendo,144 KB,fType,https://vimm.net/vault/144,https://download2.vimm.net/download/?mediaId=140&download=Download,dateF,dateL,False,False,rate,lPath,blah
 California Games,Nintendo,90 KB,fType,https://vimm.net/vault/145,https://download2.vimm.net/download/?mediaId=141&download=Download,dateF,dateL,False,False,rate,lPath,blah
@@ -32,4 +32,13 @@ Castle of Dragon,Nintendo,76 KB,fType,https://vimm.net/vault/155,https://downloa
 Castle Quest,Nintendo,108 KB,fType,https://vimm.net/vault/2878,https://download2.vimm.net/download/?mediaId=2813&download=Download,dateF,dateL,False,False,rate,lPath,blah
 Castlequest,Nintendo,38 KB,fType,https://vimm.net/vault/156,https://download2.vimm.net/download/?mediaId=151&download=Download,dateF,dateL,False,False,rate,lPath,blah
 Castlevania,Nintendo,65 KB,fType,https://vimm.net/vault/157,https://download2.vimm.net/download/?mediaId=152&download=Download,dateF,dateL,False,False,rate,lPath,blah
-
+Cleopatra's Fortune,PlayStation,47.6 MB,fType,https://vimm.net/vault/6338,https://download2.vimm.net/download/?mediaId=6338,dateF,dateL,True,False,rate,lPath,blah
+Clock Tower,PlayStation,170 MB,fType,https://vimm.net/vault/6340,https://download2.vimm.net/download/?mediaId=6340,dateF,dateL,True,False,rate,lPath,blah
+Clock Tower II: The Struggle Within,PlayStation,92.17 MB,fType,https://vimm.net/vault/6339,https://download2.vimm.net/download/?mediaId=6339,dateF,dateL,True,False,rate,lPath,blah
+Clock Tower: The First Fear,PlayStation,51.05 MB,fType,https://vimm.net/vault/6123,https://download2.vimm.net/download/?mediaId=6123,dateF,dateL,True,False,rate,lPath,blah
+Spider-Man,Dreamcast,538 MB,fType,https://vimm.net/vault/16948,https://download2.vimm.net/download/?mediaId=16948,dateF,dateL,False,False,rate,lPath,blah
+Spirit of Speed 1937,Dreamcast,239 MB,fType,https://vimm.net/vault/16949,https://download2.vimm.net/download/?mediaId=16949,dateF,dateL,False,False,rate,lPath,blah
+Sports Jam,Dreamcast,98.47 MB,fType,https://vimm.net/vault/16950,https://download2.vimm.net/download/?mediaId=16950,dateF,dateL,False,False,rate,lPath,blah
+Star Wars: Demolition,Dreamcast,652 MB,fType,https://vimm.net/vault/16954,https://download2.vimm.net/download/?mediaId=16954,dateF,dateL,False,False,rate,lPath,blah
+Star Wars: Episode 1 - Jedi Power Battles,Dreamcast,346 MB,fType,https://vimm.net/vault/16952,https://download2.vimm.net/download/?mediaId=16952,dateF,dateL,False,False,rate,lPath,blah
+Star Wars: Episode 1 - Racer,Dreamcast,313 MB,fType,https://vimm.net/vault/16953,https://download2.vimm.net/download/?mediaId=16953,dateF,dateL,False,False,rate,lPath,blah

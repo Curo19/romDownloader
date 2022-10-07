@@ -1,6 +1,0 @@
-argh
-beautifulsoup4
-requests
-pyppeteer
-zipfile
-pandas

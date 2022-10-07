@@ -42,7 +42,7 @@ note the states are as follows:
     "error" -- this indicates an unexplainable error occured during or before the download process. Recommendation to the user
     is to check the vimm's lair rom page to see if download is possible.
 
-Note currnently this program uses a headless command line google chrome browser. The user may need to download the chrome selenium driver and also download/ 
+Note currnently this program uses a headless command line google chrome browser. The user may need to download the chrome selenium driver (https://chromedriver.chromium.org/downloads) and also download/ 
 update the os chrome version. The chrome driver should be added to the romDownloader project folder. Additionally roms are downloaded one at a time and currently cannot be downloaded in parrallel. 
 
 Finally this is a simple hobby project and I would like to add more features, such as progress download bars, memory size caulucaltion, mass

@@ -1,5 +1,9 @@
 Vimm's lair Rom downloader version 2 
 ====================================
+Note: in alpha state. It works with a bit of fiddling
+With requirements.txt and chrome driver. But otherwise works 
+Well
+
 
 This project allows the user to do the following:
 

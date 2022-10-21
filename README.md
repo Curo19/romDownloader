@@ -26,7 +26,7 @@ Run
 python3 romDownloader.py 
  -- this displays the help screen and ensures that the configuration file is generated.
 
-python3 romDownloader.pu reportGeneration
+python3 romDownloader.py reportGeneration
  -- This generates a simple csv report template required for rom download and status management.
 
 python3 romDownloader.py populateReport
